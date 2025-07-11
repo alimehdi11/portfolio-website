@@ -2,53 +2,124 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 /* custom resusable classes */
 .flex {
   display: flex;
 }
-.min-screen{
-    min-height: 100vh;
+.min-screen {
+  min-height: 100vh;
 }
-.text-white{
-    color: white;
+.text-white {
+  color: white;
 }
-.text-center{
-
-    text-align: center;
+.text-gray {
+  color: grey;
 }
-.my-1{
-    margin-block: 1rem;
+.text-center {
+  text-align: center;
 }
+.my-1 {
+  margin-block: 1rem;
+}
+.my-2 {
+  margin-block: 2rem;
+}
+/* start sidebar stylling */
 aside {
   width: 300px;
   padding: 20px;
   background: #000;
+  position: absolute;
+  left: 0%;
 }
-aside img{
-    height: 120px;
-    width: 120px;
-    display: block;
-    border-radius: 50%;
-    border: 7px solid rgb(53, 50, 50);
-    margin: auto;
+aside img {
+  height: 120px;
+  width: 120px;
+  display: block;
+  border-radius: 50%;
+  border: 7px solid rgb(53, 50, 50);
+  margin: auto;
 }
-.aside-header .icons  {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 25px;
-    font-size: 22px;
+.aside-header .icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 22px;
 }
-.aside-header .icons a{
-    background-color: rgb(53, 50, 50);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
+.aside-header .icons a {
+  background-color: rgb(53, 50, 50);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
 }
-main {
-    flex-grow: 1;
-    background: rgb(255, 255, 221);
+
+aside ul li {
+  margin-bottom: 40px;
+}
+aside ul li a i {
+  margin-right: 15px;
+  width: 20px;
+  text-align: end;
+}
+aside ul li a {
+  color: #a8a9b4;
+  font-weight: 500;
+  font-size: 15px;
+}
+aside ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+aside ul li a:hover i {
+  color: rgb(8, 162, 223);
+}
+aside ul li a.active {
+  color: rgb(255, 255, 255);
+}
+aside ul li a.active i {
+  color: rgb(8, 162, 223);
+}
+/* close sidebar stylling */
+
+/* start home stylling */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://themewagon.github.io/iPortfolio/assets/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  gap: 10px;
+  padding-left: 10%;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.home h1 {
+  font-size: 3vmax;
+}
+.home h2 {
+  font-size: 1.5vmax;
+}
+.home h2 span {
+  border-bottom: 2px solid rgb(8, 162, 223);
+}
+
+/* css media queries */
+@media (max-width: 1200px) {
+  aside {
+    position: absolute;
+    transition: all 0.6s linear;
+    left: -100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    margin-left: 300px;
+  }
 }
