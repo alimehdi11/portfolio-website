@@ -32,8 +32,9 @@ aside {
   width: 300px;
   padding: 20px;
   background: #000;
-  position: absolute;
+  position: fixed;
   left: 0%;
+  height: 100%;
 }
 aside img {
   height: 120px;
@@ -93,6 +94,7 @@ aside ul li a.active i {
   background-position: center;
   display: flex;
   gap: 10px;
+  height: 100vh;
   padding-left: 10%;
   justify-content: center;
   flex-direction: column;
@@ -100,19 +102,107 @@ aside ul li a.active i {
 }
 
 .home h1 {
-  font-size: 3vmax;
+  font-size: clamp(1.875rem, 1.4205rem + 2.2727vw, 3.125rem);
 }
 .home h2 {
-  font-size: 1.5vmax;
+  font-size: clamp(1.375rem, 0.9659rem + 2.0455vw, 2.5rem);
 }
 .home h2 span {
   border-bottom: 2px solid rgb(8, 162, 223);
 }
+/* about  */
+.about {
+  padding: 50px 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+.about-main {
+  gap: 25px;
+  margin-block: 40px;
+}
+.about-main img {
+  width: 100%;
+  max-width: 380px;
+  min-width: 250px;
+}
+.about-content {
+  flex-direction: column;
+  gap: 20px;
+}
+.about-details {
+  display: flex;
+  max-width: 700px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.about-details div {
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+.about-details div p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-details span {
+  color: rgb(8, 162, 223);
+  font-size: 25px;
+  font-weight: 100;
+}
+/* counters */
+.counters {
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
+.counter {
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.counter i {
+  font-size: 40px;
+  color: rgb(8, 162, 223);
+  margin-top: 7px;
+}
+.counter div h1 {
+  font-size: 42px;
+}
+.counter div p:nth-child(3) {
+  color: #a8a9b4;
+}
+/* skills-section */
+.skills-section {
+  margin-block: 140px;
+}
+.skills .bars {
+  flex-grow: 1;
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  gap: 15px;
+}
+.skills {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.skill-bar div:nth-child(1) {
+  justify-content: space-between;
+}
+.progress {
+  margin-top: 10px;
+  background-color: #a8a9b4;
+}
+.progress-bar {
+  height: 10px;
+  background-color: rgb(8, 162, 223);
+}
 /* css media queries */
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   aside {
-    position: absolute;
+    position: fixed;
     transition: all 0.6s linear;
     left: -100%;
   }
@@ -121,5 +211,14 @@ aside ul li a.active i {
 @media (min-width: 1200px) {
   main {
     margin-left: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-main {
+    flex-direction: column;
+  }
+  .home {
+    height: 400px;
   }
 }
