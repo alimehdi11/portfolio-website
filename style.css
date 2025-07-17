@@ -111,7 +111,7 @@ aside ul li a.active i {
   border-bottom: 2px solid rgb(8, 162, 223);
 }
 /* about  */
-.about {
+.container {
   padding: 50px 20px;
   max-width: 1280px;
   margin: auto;
@@ -198,6 +198,15 @@ aside ul li a.active i {
 .progress-bar {
   height: 10px;
   background-color: rgb(8, 162, 223);
+}
+/* service section */
+.icon-div{
+  background-color: rgb(8, 162, 223);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
 }
 /* css media queries */
 @media (max-width: 1199px) {
