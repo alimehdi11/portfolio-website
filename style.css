@@ -18,6 +18,12 @@
 .text-gray {
   color: grey;
 }
+.bg-cream{
+ background-color: #fffbf7;
+}
+.bg-white{
+  background-color: white;
+}
 .text-center {
   text-align: center;
 }
@@ -200,13 +206,47 @@ aside ul li a.active i {
   background-color: rgb(8, 162, 223);
 }
 /* service section */
-.icon-div{
+.icon-div {
   background-color: rgb(8, 162, 223);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   text-align: center;
+  flex-shrink: 0;
   line-height: 58px;
+  transition: all 0.5s;
+}
+.icon-div2{
+  font-size: 15px; 
+  color: rgb(8, 162, 223);
+ background-color: #fffbf7;
+
+}
+
+.service-cards {
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+.service-cards p {
+  font-size: 14px;
+}
+.service-cards .counter {
+  flex-grow: 1;
+  flex-basis: 320px;
+}
+.service-cards .counter:hover .icon-div {
+  background-color: white;
+  border: 1px solid rgb(8, 162, 223);
+}
+.service-cards .counter:hover i {
+  color: rgb(8, 162, 223) !important;
+}
+/* contact us */
+.map{
+  padding: 20px;
+}
+.contract-card{
+  margin-bottom: 40px;
 }
 /* css media queries */
 @media (max-width: 1199px) {
