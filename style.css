@@ -252,6 +252,25 @@ aside ul li a.active i {
 .contact-parent{
   padding: 10px;
 }
+
+
+
+.summary h1{
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.Resume-content h2{
+   font-size: 30px;
+  font-weight: 500;
+}
+.Resume-content h4{
+  font-size: 25px;
+  font-weight:250px ;
+}
+.Resume-content div p{
+  line-height: 20px;
+}
 /* css media queries */
 @media (max-width: 1199px) {
   aside {
