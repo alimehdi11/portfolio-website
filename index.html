@@ -22,6 +22,8 @@
     <!-- google font cdn -->
     <!-- linking css files -->
     <link rel="stylesheet" href="style.css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="">
@@ -330,25 +332,28 @@
           </div>
         </div>
         <!-- service section -->
-         <!-- Contact section -->
-          <div class="contacts bg-cream ">
-            <div class="contact-section container">
-              <h1>Contact</h1>
-              <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-              <div class="map bg-white">
-                <div class="contract-card flex">
-                  <div class="icon-div icon-div2">
-                    <i  class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="contant">
-                    <h2>Address</h2>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
+        <!-- Contact section -->
+        <div class="contact-section container">
+          <h1>Contact</h1>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem
+            sintconsectetur velit
+          </p>
+          <div class="bg-cream contact-parent flex-wrap justify-center my-2 flex gap-6">
+            <div class="map bg-white max-w-[500px] w-full py-10">
+              <div class="contract-card flex">
+                <div class="icon-div icon-div2">
+                  <i class="fa-solid fa-location-dot"></i>
                 </div>
+                <div class="contant">
+                  <h2>Address</h2>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
 
               <div class="contract-card flex">
                 <div class="icon-div icon-div2">
-                  <i  class="fa-solid fa-phone"></i>
+                  <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="contant">
                   <h2>Call us</h2>
@@ -361,14 +366,44 @@
                   <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="contant">
-                  <h2>Email us </h2>
+                  <h2>Email us</h2>
                   <p>info@example.com</p>
                 </div>
               </div>
-              </div>
-              <div class="contact-form"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28837.968548589914!2d68.30457907431642!3d25.379825600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7084f3176189%3A0x88ff9a96831380ec!2sThe%20Educators!5e0!3m2!1sen!2s!4v1753271858633!5m2!1sen!2s"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="contact-form bg-white w-[500px] flex-1 w-full px-5 py-10">
+              <form action="" class="space-y-4">
+                <div class="flex gap-5">
+                  <div class="flex flex-col gap-2 flex-1">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:border-0 outline-none p-2 "></div>
+
+                  <div class="flex flex-col gap-2 flex-1">
+                    <label for="email">Your Email</label>
+                    <input type="email"id="email" class="border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:border-0 outline-none p-2"></div>
+                </div>
+                <div class="flex flex-col gap-2 flex-1">
+                  <label for="subject">Subject</label>
+                  <input type="text"id="subject"class="border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:border-0 outline-none p-2"/> </div>
+                <div>
+                  <label for="meg">Message</label>
+                  <textarea name="" id="meg"
+                  class="w-full h-10 border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:border-0 outline-none p-2"></textarea>
+                </div>
+                <button class="bg-[rgb(8,162,223)] text-white px-5 py-2 rounded-full mx-auto block" >Send Message </button>
+              </form>
+            </div>
           </div>
-          </div>
+        </div>
       </main>
     </div>
   </body>
