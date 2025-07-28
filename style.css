@@ -18,10 +18,10 @@
 .text-gray {
   color: grey;
 }
-.bg-cream{
- background-color: #fffbf7 !important ;
+.bg-cream {
+  background-color: #fffbf7 !important ;
 }
-.bg-white{
+.bg-white {
   background-color: white;
 }
 .text-center {
@@ -216,11 +216,10 @@ aside ul li a.active i {
   line-height: 58px;
   transition: all 0.5s;
 }
-.icon-div2{
-  font-size: 15px; 
+.icon-div2 {
+  font-size: 15px;
   color: rgb(8, 162, 223);
- background-color: #fffbf7;
-
+  background-color: #fffbf7;
 }
 
 .service-cards {
@@ -242,34 +241,52 @@ aside ul li a.active i {
   color: rgb(8, 162, 223) !important;
 }
 /* contact us */
-.map{
+.map {
   padding: 20px;
-  
 }
-.contract-card{
+.contract-card {
   margin-bottom: 40px;
 }
-.contact-parent{
+.contact-parent {
   padding: 10px;
 }
 
-
-
-.summary h1{
+.summary h1 {
   font-size: 40px;
   font-weight: 600;
-
 }
-.Resume-content h2{
-   font-size: 30px;
+.Resume-content h2 {
+  font-size: 30px;
   font-weight: 500;
 }
-.Resume-content h4{
+.Resume-content h4 {
   font-size: 25px;
-  font-weight:250px ;
+  font-weight: 250px;
 }
-.Resume-content div p{
+.Resume-content div p {
   line-height: 20px;
+}
+.Resume-content {
+  position: relative;
+}
+.Resume-content::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0;
+  background-color: rgb(8, 162, 223);
+}
+.Resume-content::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -1.2%;
+  top: 0;
+  border: 2px solid rgb(8, 162, 223);
+  background-color: #fff;
 }
 /* css media queries */
 @media (max-width: 1199px) {
@@ -294,7 +311,3 @@ aside ul li a.active i {
     height: 400px;
   }
 }
-
-
-
-
