@@ -283,11 +283,12 @@ aside ul li a.active i {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  left: -1.2%;
+  left: -8px;
   top: 0;
   border: 2px solid rgb(8, 162, 223);
   background-color: #fff;
 }
+
 /* css media queries */
 @media (max-width: 1199px) {
   aside {
